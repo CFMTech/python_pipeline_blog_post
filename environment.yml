@@ -1,0 +1,29 @@
+name: python_pipeline
+channels:
+  - defaults
+dependencies:
+  # Python & Jupyter
+  - python
+  - ipykernel
+  # Data load & analysis
+  - pandas
+  - pandas-datareader
+  - matplotlib
+  # Pipeline execution & visualization
+  - dask
+  - graphviz
+  - python-graphviz
+  # Tests
+  - pytest
+  - pytest-cov
+  - pytest-xdist  # worker_id
+  - deepdiff
+  # Linters & pre-commit hooks
+  # (in case we want to run the linters manually
+  # + use the same versions as in the hook)
+  - pip
+  - pip:
+      - pre-commit
+      - flake8==3.9.2
+      - black==21.11b1
+      - isort==5.10.1

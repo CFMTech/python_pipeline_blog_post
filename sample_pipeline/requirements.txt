@@ -1,0 +1,11 @@
+# Data load & analysis
+pandas
+pandas-datareader
+matplotlib
+# Pipeline execution
+dask[distributed]
+# Tests
+pytest
+pytest-cov
+pytest-xdist
+deepdiff
